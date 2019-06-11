@@ -1,0 +1,22 @@
+^RUA Russell Index - Daily
+^TNX Treasury 10-Year Rate - Daily
+^VIX CBOE Volatility Index - Daily (Missing)
+A067RL1Q156SBEA Real Disposable Personal Income - Quarterly
+AII-AII_SENTIMENT Investor Sentiment - Weekly
+CPIAUCSL Consumer Price Index - Monthly
+DP_LIVE_08052019042347478 Consumer Confidence Index - Monthly
+GOLDAMGBD228NLBM Gold Fixing Price - Daily
+GVZCLS CBOE Gold Volatility Index - Daily
+PSAVERT Personal Savings Rate - Monthly
+UNRATE Unemployment Rate - Monthly
+MORTGAGE30US 30-YEar US Mortgage Rate - Weekly
+DGS10 10-Year Treasury Constant Maturity Rate - Daily
+BCI - Weekly
+
+Label1:
+	1 if ratio > 0
+	0 if ratio <= 0
+
+Label2: (change in ratio)
+	1 if change > 0
+	0 if change <= 0
