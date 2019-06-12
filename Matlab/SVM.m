@@ -3,8 +3,8 @@ function [grid, grid_train, grid_std, resultData] = SVM(normTrain, normVal)
 skip = 2; % changed from 2
 grid = [];
 grid_train = [];
-C_list = [4]; %.1 .2 .3 .4 .5 .6 .7 .8 .9 1 2 3 4 5 6 7 8 9 10];
-gamma_list = [1]; % 2 3 4 5 6 7 8 9 10 20]; % 30 40 50 60 70
+C_list = [.1 .2 .3 .4 .5 .6 .7 .8 .9 1 2 3 4 5 6 7 8 9 10];
+gamma_list = [1 2 3 4 5 6 7 8 9 10 20]; % 30 40 50 60 70
 resultData = {};
 
 for C_idx = 1:length(C_list);
