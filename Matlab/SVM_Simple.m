@@ -8,9 +8,11 @@
 
 rng 'default'
 
-X = readtable('Combined_Sets_from_Revised_3_Label1.csv');
-X = X(4183:6183,:);
-X.google_hits67 = cellfun(@(x) str2num(x), X.google_hits67) % R2018a only
+X = readtable('../Python/Combined_Sets_from_Revised.csv');
+X = X(3:7100, 1:149);
+X(:, [123 127 131 135 139]) = [];
+%X = X(4183:6183,:);
+%X.google_hits67 = cellfun(@(x) str2num(x), X.google_hits67) % R2018a only
 
 %varnames = X.Properties.VariableNames
 %varnames{2} = 'labels'
